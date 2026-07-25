@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B14390463012559E0094A83B /* Jost-700-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B14390453012559E0094A83B /* Jost-700-Bold.ttf */; };
 		B16AB912300E809D00696576 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B16AB911300E809D00696576 /* ComposableArchitecture */; };
 		B16AB915300E80EA00696576 /* BMSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B16AB914300E80EA00696576 /* BMSwiftUI */; };
 		B16AB918300E811700696576 /* BMSwiftNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = B16AB917300E811700696576 /* BMSwiftNetworking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B14390453012559E0094A83B /* Jost-700-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-700-Bold.ttf"; sourceTree = "<group>"; };
 		B1FDE2D330079A8200750ACC /* iOS_GrandHotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_GrandHotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -45,7 +43,6 @@
 			children = (
 				B1FDE2D530079A8200750ACC /* iOS_GrandHotel */,
 				B1FDE2D430079A8200750ACC /* Products */,
-				B14390453012559E0094A83B /* Jost-700-Bold.ttf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,7 +127,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B14390463012559E0094A83B /* Jost-700-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +204,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -266,6 +263,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

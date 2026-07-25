@@ -4,7 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Jost-700-Bold</string>
+		<string>Jost-700-Bold.ttf</string>
+		<string>Jost-400-Book.ttf</string>
 	</array>
 </dict>
 </plist>

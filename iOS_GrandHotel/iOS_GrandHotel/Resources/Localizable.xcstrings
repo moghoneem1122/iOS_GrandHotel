@@ -1,0 +1,38 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "find_your_perfect_stay" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اعثر على إقامتك المثالية، في أي وقت، وفي أي مكان"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Find Your Perfect Stay, Anytime, Anywhere"
+          }
+        }
+      }
+    },
+    "grand_hotel" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جراند هوتيل"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grand Hotel"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
