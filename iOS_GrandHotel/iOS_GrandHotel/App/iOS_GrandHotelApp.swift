@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct iOS_GrandHotelApp: App {
+
     var body: some Scene {
+        
+        
         WindowGroup {
-            ContentView()
-        }
+            Splash(store: Store(initialState: SplashReducer.State(), reducer: {
+                SplashReducer()
+            }))        }
     }
 }
