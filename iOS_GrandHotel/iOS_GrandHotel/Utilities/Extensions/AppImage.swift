@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum AppImage{
+extension Image{
     //MARK: - SplashView
     static let logo = Image("SplashIcon")
 }

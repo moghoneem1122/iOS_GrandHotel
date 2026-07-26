@@ -35,10 +35,10 @@ struct Splash: View {
         
         ZStack{
             
-            Colors.splashBackGround
+            Color.splashBackGround
                 .ignoresSafeArea(edges: .all)
             VStack(){
-                AppImage.logo
+                Image.logo
                     .setFrame(width: 89.7, height:123.2)
                 
                 Text(AppLocalization.splashTitle)

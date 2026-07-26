@@ -1,9 +1,9 @@
 
 
-import Foundation
+
 import SwiftUI
 import BMSwiftUI
 
-struct Colors{
+extension Color{
     static let splashBackGround = Color(hex: "#2853AF")
 }
