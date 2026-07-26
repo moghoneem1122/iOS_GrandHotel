@@ -17,7 +17,6 @@ struct iOS_GrandHotelApp: App {
         WindowGroup {
             Splash(store: Store(initialState: SplashReducer.State(), reducer: {
                 SplashReducer()
-            }))
-        }
+            }))        }
     }
 }

@@ -47,12 +47,12 @@ struct Splash: View {
                     .frame(width: 89.7, height: 123.2)
                 
                 Text("grand_hotel")
-                    .font(.custom("Jost-700-Bold.ttf", size: 40))
+                    .font(.custom("Jost-Bold", size: 40))
                     .foregroundStyle(.white)
                     .frame(width: 234, height: 48)
                 
                 Text("find_your_perfect_stay")
-                    .font(.custom("Jost-400-Book.ttf", size: 14))
+                    .font(.custom("Jost-Regular", size: 14))
                     .foregroundStyle(.white)
                     .fixedSize(horizontal: true, vertical: false)
             }
