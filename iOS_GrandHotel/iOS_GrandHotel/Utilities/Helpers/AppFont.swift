@@ -1,9 +1,5 @@
+
 import SwiftUI
-
-#if os(iOS)
-import UIKit
-#endif
-
 
 // MARK: - Font Weight
 
@@ -11,6 +7,7 @@ enum FontWeight: String {
     case bold = "Bold"
     case regular = "Regular"
     case medium = "Medium"
+    case semiBold = "SemiBold"
     
     var suffix: String {
         rawValue
@@ -33,54 +30,46 @@ enum FontHelper {
             size: size
         )
     }
+}
+
+
+// MARK: - Text Style Modifier
+
+struct TextStyleModifier: ViewModifier {
     
-    #if os(iOS)
-    static func uiFont(
-        size: CGFloat,
-        weight: FontWeight
-    ) -> UIFont {
-        UIFont(
-            name: "\(fontFamily)-\(weight.suffix)",
-            size: size
-        ) ?? UIFont.systemFont(
-            ofSize: size,
-            weight: weight.uiWeight
+    let size: CGFloat
+    let weight: FontWeight
+    let color: Color
+    
+    func body(content: Content) -> some View {
+        content
+            .font(
+                FontHelper.font(
+                    size: size,
+                    weight: weight
+                )
+            )
+            .foregroundStyle(color)
+    }
+}
+
+
+// MARK: - View Extension
+
+extension View {
+    
+    func textStyle(
+        size: CGFloat = 16,
+        weight: FontWeight = .regular,
+        color: Color = .primary
+    ) -> some View {
+        
+        self.modifier(
+            TextStyleModifier(
+                size: size,
+                weight: weight,
+                color: color
+            )
         )
     }
-    #endif
-}
-
-
-// MARK: - UIKit Font Weight Mapping
-
-#if os(iOS)
-extension FontWeight {
-    
-    var uiWeight: UIFont.Weight {
-        switch self {
-        case .bold:
-            return .bold
-        case .regular:
-            return .regular
-        case .medium:
-            return .medium
-        }
-    }
-}
-#endif
-
-
-// MARK: - App Fonts
-
-enum AppFont {
-    
-    static let splashTitle = FontHelper.font(
-        size: 40,
-        weight: .bold
-    )
-    
-    static let splashSubTitle = FontHelper.font(
-        size: 14,
-        weight: .regular
-    )
 }

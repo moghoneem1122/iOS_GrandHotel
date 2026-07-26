@@ -42,12 +42,18 @@ struct Splash: View {
                     .setFrame(width: 89.7, height:123.2)
                 
                 Text(AppLocalization.splashTitle)
-                    .font(AppFont.splashTitle)
-                    .foregroundStyle(.white)
+                    .textStyle(
+                        size: 40,
+                        weight: .bold,
+                        color: .white
+                    )
                 
                 Text(AppLocalization.splashSubTitle)
-                    .font(AppFont.splashSubTitle)
-                    .foregroundStyle(.white)
+                    .textStyle(
+                        size: 14,
+                        weight: .regular,
+                        color: .white
+                    )
                 
                                 }
         }
