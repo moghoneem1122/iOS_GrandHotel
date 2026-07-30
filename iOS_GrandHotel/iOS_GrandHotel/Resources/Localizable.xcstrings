@@ -1,6 +1,27 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "#%lld" : {
+
+    },
+    "Add Slide" : {
+
+    },
+    "Cancel" : {
+
+    },
+    "Choose Photo" : {
+
+    },
+    "Content" : {
+
+    },
+    "Continue" : {
+
+    },
+    "Edit Slide" : {
+
+    },
     "find_your_perfect_stay" : {
       "localizations" : {
         "ar" : {
@@ -17,6 +38,9 @@
         }
       }
     },
+    "Get Started" : {
+
+    },
     "grand_hotel" : {
       "localizations" : {
         "ar" : {
@@ -32,6 +56,64 @@
           }
         }
       }
+    },
+    "Home" : {
+
+    },
+    "Image" : {
+
+    },
+    "Manage Slides" : {
+
+    },
+    "onboarding_slide_1_title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "الفخامة والراحة، على بُعد ضغطة واحدة"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luxury and Comfort, Just a Tap Away"
+          }
+        }
+      }
+    },
+    "onboarding_slide_2_title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "احجز بسهولة، وأقم بأناقة"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Book with Ease, Stay with Style"
+          }
+        }
+      }
+    },
+    "Replay Onboarding" : {
+
+    },
+    "Save" : {
+
+    },
+    "Skip" : {
+
+    },
+    "Title" : {
+
+    },
+    "Welcome!" : {
+
     }
   },
   "version" : "1.0"
