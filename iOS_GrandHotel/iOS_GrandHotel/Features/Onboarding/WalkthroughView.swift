@@ -17,7 +17,7 @@ struct WalkthroughView: View {
 
     var body: some View {
         if slides.isEmpty {
-            HomeView(appState: appState)
+            LogInView()
         } else {
             ZStack {
                 TabView(selection: $currentPage) {

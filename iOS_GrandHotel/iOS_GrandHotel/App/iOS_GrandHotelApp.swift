@@ -8,9 +8,19 @@
 import SwiftUI
 import SwiftData
 import ComposableArchitecture
+import FirebaseCore
 
 @main
 struct iOS_GrandHotelApp: App {
+    
+    class AppDelegate: NSObject, UIApplicationDelegate {
+      func application(_ application: UIApplication,
+                       didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        FirebaseApp.configure()
+
+        return true
+      }
+    }
 
     private let modelContainer: ModelContainer
 
@@ -21,8 +31,11 @@ struct iOS_GrandHotelApp: App {
             fatalError("Unable to create the SwiftData container: \(error)")
         }
     }
-
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
+        
         WindowGroup {
             AppEntryView()
         }
