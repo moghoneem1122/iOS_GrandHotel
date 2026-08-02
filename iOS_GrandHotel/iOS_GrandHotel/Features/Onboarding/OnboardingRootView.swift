@@ -16,8 +16,8 @@ struct OnboardingRootView: View {
         Group {
             if hasFinishedPreparing, let appState = appStates.first {
                 if appState.hasCompletedOnboarding || slides.isEmpty {
-                    HomeView(appState: appState)
-                } else {
+                        LogInView()    }
+                else {
                     WalkthroughView(appState: appState)
                 }
             } else {

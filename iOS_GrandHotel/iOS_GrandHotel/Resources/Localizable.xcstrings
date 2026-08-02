@@ -1,25 +1,16 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "#%lld" : {
-
-    },
-    "Add Slide" : {
-
-    },
-    "Cancel" : {
-
-    },
-    "Choose Photo" : {
-
-    },
-    "Content" : {
+    "%.1f°C" : {
 
     },
     "Continue" : {
 
     },
-    "Edit Slide" : {
+    "Email" : {
+
+    },
+    "Enter City" : {
 
     },
     "find_your_perfect_stay" : {
@@ -41,6 +32,9 @@
     "Get Started" : {
 
     },
+    "Get Weather" : {
+
+    },
     "grand_hotel" : {
       "localizations" : {
         "ar" : {
@@ -57,13 +51,7 @@
         }
       }
     },
-    "Home" : {
-
-    },
-    "Image" : {
-
-    },
-    "Manage Slides" : {
+    "Login" : {
 
     },
     "onboarding_slide_1_title" : {
@@ -100,19 +88,13 @@
         }
       }
     },
-    "Replay Onboarding" : {
-
-    },
-    "Save" : {
+    "Password" : {
 
     },
     "Skip" : {
 
     },
-    "Title" : {
-
-    },
-    "Welcome!" : {
+    "Weather" : {
 
     }
   },
